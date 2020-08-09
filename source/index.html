@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head> 
+<body class="page__body body">
+    <header class="header page-header">
+       <nav class="main-nav main-nav--closed maid-nav--open">
+           <button class="main-nav__toggle" type="button">
+               <span class="visually-hiden">Открыть меню</span>
+           </button>
+           <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                    <a class="site-list__link" href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="#">Фото и видео</a>          
+                </li>
+                <li class="site-list__item site-list__item--logo">
+                    <a class="page-header__logo" href="#">
+                        <img class="main-nav__logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona">
+                    </a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="#">форма отзыва</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="#">html academy</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="page-header__intro index-intro">
+            <img class="index-intro__image" src="img/text-sedona-index.svg" width="282" height="214" alt="Sedona-Welcome">
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="prev">
+            <header class="prev__header">
+                <h2 class="prev__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+                <p class="prev__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</p>
+            </header>
+            <ul class="prev__list reasons">
+                <li class="reasons__item">
+                    <div class="reasons__item-block">
+                        <h3 class="reasons__title">Настоящий городок</h3>
+                        <p class="reasons__order">-№1-</p>
+                        <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p> 
+                    </div>    
+                    <img class="reasons__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона"
+                    <ul class="reasons__inner-list">
+                        <li class="reasons__inner-item">
+                          <h3 class="reasons__inner-title">Жилье</h3>
+                          <p class="reasons__inner-description"> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                        </li>
+                        <li class="reasons__inner-item">
+                          <h3 class="reasons__inner-title">сувениры</h3>
+                          <p class="reasons__inner-description">не только китайского, но и местного производства!</p>
+                        </li>
+                        <li class="reasons__inner-item">
+                          <h3 class="reasons__inner-title">Еда</h3>
+                          <p class="reasons__inner-description">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        </li>
+                    </ul>
+                </li>    
+                <li class="reasons__item reasons__item-bottom">
+                    <div class="reasons__item-block">
+                        <h3 class="reasons__title">Там есть мост дьявола</h3>
+                        <p class="reasons__order">-№2-</p>
+                        <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p> 
+                    </div>
+                    <img class="reasons__img" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост"
+                </li>
+                <li class="reasons__item">
+                    <h3 class="reasons__title">небольшая площадь</h3>
+                    <p class="reasons__order">-№3-</p>
+                    <p class="reasons__description">Все интересные места находятся очень близко</p> 
+                </li>
+                <li class="reasons__item">
+                    <h3 class="reasons__title">Красивая дорога</h3>
+                   <p class="reasons__order">-№4-</p>
+                   <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p> 
+               </li>
+               <li class="reasons__item">
+                   <h3 class="reasons__title">Мало туристов</h3>
+                   <p class="reasons__order">-№5-</p>
+                   <p class="reasons__description">Большинство едет в Гранд-Каньон и толпится там</p> 
+               </li>
+           </ul>
+        </section>
+        <section class="find-hotel">
+            <div class="find-hotel__wrapper">
+                <h2 class="find-hotel__title">Заинтересовались?</h2>
+                <p class="find-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <a class="find-hotel__btn" href="#">Найти гостиницу</a>
+            </div> 
+        </section>
+        <section class="main-map">
+            <img class="main-map__img" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта Седоны">
+        </section>
+    </main>
+<footer class="page-footer">
+    <div class="page-footer__wrapper"
+        <p class="page-footer__tag">
+        #visitSEDONA
+        </p>
+        <div class="page-footer__social">
+            <ul class="social-list">
+                <li class="social__item">
+                    <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы на Ютубе</a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
