@@ -8,34 +8,39 @@
 </head>
 <body class="page__body">
     <header class="page-header">
-        <nav class="main-nav main-nav--closed maid-nav--open">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button">
-               <span class="visually-hiden">Открыть меню</span>
+                <span class="visually-hiden">Открыть меню</span>
             </button>
             <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
-                    <a class="site-list__link" href="#">Главная</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">Фото и видео</a>                  
-                </li>
-                <li class="site-list__item site-list__item--logo">
-                    <a class="page-header__logo" href="#">
-                        <img class="main-nav__logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona">
-                    </a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">форма отзыва</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">html academy</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="page-header__intro index-inner">
-            <img class="index-intro__image" src="img/text-sedona-index.svg" width="282" height="214" alt="Sedona-Welcome">
-        </div>
-    </header>
+                 <li class="site-list__item site-list__item--active">
+                     <a>Главная</a>
+                 </li>
+                 <li class="site-list__item">
+                     <a href="photo.html">Фото и видео</a>          
+                 </li>
+                 <li class="site-list__item site-list__item--logo">
+                     <a class="page-header__logo" href="index.html">
+                         <picture>
+                             <source media="(min-width: 1280px)" srcset="img/logo-sedona-desctop.svg">
+                             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                             <img class="main-nav__logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona">
+                         </picture>
+                     </a>
+                 </li>
+                 <li class="site-list__item">
+                     <a href="form.html">форма отзыва</a>
+                 </li>
+                 <li class="site-list__item">
+                     <a href="#">HTML Academy</a>
+                 </li>
+             </ul>
+         </nav>
+         <div class="page-header__intro page-header__intro--index">
+             <img class="header-intro__image header-intro__image--index" src="img/text-sedona-index.svg" width="282" height="214" alt="Sedona-Welcome">
+         </div>
+     </header>
+
     <main class="page-main">
         <section class="photo">
             <div class="photo__block">
@@ -120,12 +125,11 @@
             </div>
         </section>
     </main>
+
     <footer class="page-footer">
         <div class="page-footer__wrapper"
-            <p class="page-footer__tag">
-            #visitSEDONA
-            </p>
-            <div class="page-footer__social">
+            <p class="page-footer__tag">#visitSEDONA</p>
+            <div class="page-footer__social social">
                 <ul class="social-list">
                     <li class="social__item">
                         <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
@@ -138,10 +142,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="page-footer__copyright copyright">
+            <div class="page-footer__copyright">
                 <b class="copyright__text">Разработано</b>
                 <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </div>
         </div>
     </footer>
+
 </body>
+
+</html>

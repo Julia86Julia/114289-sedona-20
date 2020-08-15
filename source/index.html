@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,106 +9,126 @@
 </head> 
 <body class="page__body">
     <header class="page-header">
-       <nav class="main-nav main-nav--closed maid-nav--open">
+       <nav class="main-nav main-nav--closed main-nav--nojs">
            <button class="main-nav__toggle" type="button">
                <span class="visually-hiden">Открыть меню</span>
            </button>
            <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
-                    <a class="site-list__link" href="#">Главная</a>
+                    <a>Главная</a>
                 </li>
                 <li class="site-list__item">
-                    <a class="site-list__link" href="#">Фото и видео</a>          
+                    <a href="photo.html">Фото и видео</a>          
                 </li>
                 <li class="site-list__item site-list__item--logo">
-                    <a class="page-header__logo" href="#">
-                        <img class="main-nav__logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona">
+                    <a class="page-header__logo" href="index.html">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="img/logo-sedona-desctop.svg">
+                            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                            <img class="main-nav__logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona">
+                        </picture>
                     </a>
                 </li>
                 <li class="site-list__item">
-                    <a class="site-list__link" href="#">форма отзыва</a>
+                    <a href="form.html">форма отзыва</a>
                 </li>
                 <li class="site-list__item">
-                    <a class="site-list__link" href="#">html academy</a>
+                    <a href="#">HTML Academy</a>
                 </li>
             </ul>
         </nav>
-        <div class="page-header__intro index-intro">
-            <img class="index-intro__image" src="img/text-sedona-index.svg" width="282" height="214" alt="Sedona-Welcome">
+        <div class="page-header__intro page-header__intro--index">
+            <img class="header-intro__image header-intro__image--index" src="img/text-sedona-index.svg" width="282" height="214" alt="Sedona-Welcome">
         </div>
     </header>
+
     <main class="page-main">
+        <h1 class="visually-hiden">Поиск гостиниц в городе Седона</h1>
         <section class="prev">
             <header class="prev__header">
                 <h2 class="prev__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
                 <p class="prev__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</p>
             </header>
             <ul class="prev__list reasons">
-                <li class="reasons__item reasons__item--accent">
+                <li class="reasons__item reasons__item--accent reasons__item--accent-top">
                     <div class="reasons__triangle"></div>
                     <div class="reasons__item-block">
                         <h3 class="reasons__title reasons__title--accent">Настоящий городок</h3>
-                        <p class="reasons__order">-№1-</p>
-                        <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p> 
-                    </div>    
-                    <img class="reasons__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона"
-                    <ul class="prev__list inner">
-                        <li class="inner__item inner__item--house">
-                          <h3 class="inner__title inner__title--house">Жилье</h3>
-                          <p class="inner__description inner__description--house"> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                        <p class="reasons__order reasons__order--accent">-№1-</p>
+                        <p class="reasons__text reasons__text--accent--top ">Седона не аттракцион для туристов, там течет своя жизнь</p> 
+                    </div>  
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+                            <source media="(min-width: 1280px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">"  
+                            <img class="reasons__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона">
+                    </picture>
+                    <ul class="prev__list recommendations">
+                        <li class="recommendations__item recommendations__item--house">
+                          <h3 class="recommendations__title recommendations__title--house">Жилье</h3>
+                          <p class="recommendations__description recommendations__description--house"> Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                         </li>
-                        <li class="inner__item inner__item--gift">
-                          <h3 class="inner__title inner__title--gift">сувениры</h3>
-                          <p class="inner__description inner__description--gift">не только китайского, но и местного производства!</p>
+                        <li class="recommendations__item recommendations__item--gift">
+                          <h3 class="recommendations__title recommendations__title--gift">Сувениры</h3>
+                          <p class="recommendations__description recommendations__description--gift">Не только китайского, но и местного производства!</p>
                         </li>
-                        <li class="inner__item inner__item--burger">
-                          <h3 class="inner__title inner__title--burger">Еда</h3>
-                          <p class="inner__description inner__description--burger">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        <li class="recommendations__item recommendations__item--burger">
+                          <h3 class="recommendations__title recommendations__title--burger">Еда</h3>
+                          <p class="recommendations__description recommendations__description--burger">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </li>
                     </ul>
                 </li>    
-                <li class="reasons__item reasons__item-bottom">
+                <li class="reasons__item reasons__item--accent reasons__item--accent-bottom">
                     <div class="reasons__item-block reasons__item-block--bottom">
                         <h3 class="reasons__title reasons__title--accent reasons__title--accent--bottom">Там есть мост дьявола</h3>
-                        <p class="reasons__order">-№2-</p>
-                        <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p> 
+                        <p class="reasons__order reasons__order--accent">-№2-</p>
+                        <p class="reasons__text reasons__text--accent reasons__text--accent--bottom">Да, по нему можно пройти! Если вы осмелитесь, конечно</p> 
                     </div>
-                    <img class="reasons__img" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост"
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+                        <source media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">    
+                        <img class="reasons__img" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост">
+                    </picture>
                 </li>
-                <li class="reasons__item reasons__item--background">
-                    <h3 class="reasons__title">небольшая площадь</h3>
-                    <p class="reasons__order">-№3-</p>
-                    <p class="reasons__description">Все интересные места находятся очень близко</p> 
+                <li class="reasons__item reasons__item--accent-background">
+                    <h3 class="reasons__title">Небольшая площадь</h3>
+                    <p class="reasons__order reasons__order--bottom">-№3-</p>
+                    <p class="reasons__text">Все интересные места находятся очень близко</p> 
                 </li>
-                <li class="reasons__item">
+                <li class="reasons__item reasons__item--accent-background">
                     <h3 class="reasons__title">Красивая дорога</h3>
-                   <p class="reasons__order">-№4-</p>
-                   <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p> 
+                    <p class="reasons__order reasons__order--bottom">-№4-</p>
+                    <p class="reasons__text reasons__text--bottom">Ехать в Седону из Лас-Вегаса совсем не скучно!</p> 
                </li>
-               <li class="reasons__item">
+               <li class="reasons__item reasons__item--accent-background">
                    <h3 class="reasons__title">Мало туристов</h3>
-                   <p class="reasons__order">-№5-</p>
-                   <p class="reasons__description">Большинство едет в Гранд-Каньон и толпится там</p> 
+                   <p class="reasons__order reasons__order--bottom">-№5-</p>
+                   <p class="reasons__text">Большинство едет в Гранд-Каньон и толпится там</p> 
                </li>
            </ul>
         </section>
-        <section class="find-hotel">
-            <div class="find-hotel__wrapper">
-                <h2 class="find-hotel__title">Заинтересовались?</h2>
-                <p class="find-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <a class="find-hotel__btn" href="#">Найти гостиницу</a>
+        <section class="find-hotel-form">
+            <div class="find-hotel-form__wrapper">
+                <h2 class="find-hotel-form__title">Заинтересовались?</h2>
+                <p class="find-hotel-form__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <a class="find-hotel-form__btn btn" href="#">Найти гостиницу</a>
             </div> 
         </section>
         <section class="main-map">
+            <h2 class="visually-hiden">Седона на карте штата Аризоны</h2>
             <img class="main-map__img" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта Седоны">
         </section>
     </main>
+
 <footer class="page-footer">
     <div class="page-footer__wrapper"
-        <p class="page-footer__tag">
-        #visitSEDONA
-        </p>
-        <div class="page-footer__social">
+        <p class="page-footer__tag">#visitSEDONA</p>
+        <div class="page-footer__social social">
             <ul class="social-list">
                 <li class="social__item">
                     <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
@@ -120,11 +141,13 @@
                 </li>
             </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="page-footer__copyright">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
     </div>
 </footer>
+
 </body>
+
 </html>
