@@ -1,3 +1,10 @@
+.main-nav {
+    position: relative;
+    width: auto;
+    min-height: 51px;
+    background-color: #ffffff;
+}
+
 .main-nav__list {
     margin: 0;
     padding: 0;
@@ -80,9 +87,9 @@
 }
 
 .main-nav--opened .main-nav__toggle:active::before {
-    background-color: fade (@color-site, 30%);
+    background-color: fade(@color-site, 30%);
     box-shadow: 
-        0 9px 0 0 fade(@color-site. 30%),
+        0 9px 0 0 fade(@color-site, 30%),
         0 18px 0 0 fade(@color-site, 30%);
 }
 
@@ -248,6 +255,7 @@
 .main-nav__logo {
     display: block;
     padding: 0;
+    margin: 0;
     margin: 0 auto;
 
     @media (min-width: @desktop-width) {
