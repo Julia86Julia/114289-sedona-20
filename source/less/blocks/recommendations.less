@@ -1,0 +1,139 @@
+.recommendations {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    padding-bottom: 33px;
+    list-style: none;
+    line-height: 21px;
+    color: #333333;
+    background-color: @color-background;
+
+    @media (min-width: @tablet-width) {
+        width: 768px;
+        min-height: 330px;
+        padding-top: 0;
+        padding-bottom: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 1200px;
+        justify-content: flex-start;
+        padding-left: 58px;
+    }
+}
+
+.recommendations__item {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 27px;
+
+    @media (min-width: @tablet-width) {
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.recommendations__item:last-child {
+    margin-bottom: 0;
+}
+
+.recommendations__item--house {
+    @media (min-width: @tablet-width) {
+        width: 185px;
+        margin-left: 36px;
+        margin-right: 85px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 282px;
+        margin-left: 0;
+        margin-right: 111px;
+    }
+}
+
+.recommendations__item--gift {
+    @media (min-width: @tablet-width) {
+        width: 193px;
+        order:1;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 244px;
+    }
+}
+
+.recommendations__item--burger {
+    padding-right: 70px;
+  
+    @media (min-width: @tablet-width) {
+      width: 155px;
+      padding-right: 0;
+      margin-right: 83px;
+    }
+  
+    @media (min-width: @desktop-width) {
+      width: 300px;
+      margin-right: 127px;
+    }
+  }
+
+.recommendations__title {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+
+    @media (min-width: @tablet-width) {
+        padding-top: 158px;
+        margin-bottom: 23px;
+        font-size: 21px;
+        text-align: center;
+    }
+}
+
+.recommendations__description {
+    margin: 0;
+    padding: 0;
+    line-height: 21px;
+    text-align: left;
+
+    @media (min-width: @tablet-width) {
+        text-align: center;
+    }
+}
+
+.recommendations__icon-house,
+.recommendations__icon-gift,
+.recommendations__icon-burger {
+    position: absolute;
+    fill: @color-site;
+}
+
+.recommendations__icon-house {
+    top: -9px;
+    left: 21px;
+
+    @media (min-width: @tablet-width) {
+        width: 75px;
+        height: 72px;
+        left: 54px;
+        top: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+        top: 59px;
+        left: 103px;
+    }
+}
