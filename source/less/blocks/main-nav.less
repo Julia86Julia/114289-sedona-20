@@ -80,9 +80,9 @@
 }
 
 .main-nav--opened .main-nav__toggle:active::before {
-    background-color: fade (@color-site, 30%);
+    background-color: fade(@color-site, 30%);
     box-shadow: 
-        0 9px 0 0 fade(@color-site. 30%),
+        0 9px 0 0 fade(@color-site, 30%),
         0 18px 0 0 fade(@color-site, 30%);
 }
 
@@ -91,7 +91,7 @@
     right: 20px;
     background-color: transparent;
 
-    &:::before,
+    &::before,
     &::after {
         content: "";
         position: absolute;
@@ -102,7 +102,7 @@
         background-color: @color-background;
     }
 
-    &:::before {
+    &::before {
         transform: rotate(45deg);
         box-shadow: none;
     }
