@@ -1,0 +1,27 @@
+.main-map {
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        width: 768px;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 1200px;
+    }
+}
+
+.map__google {
+    display: block;
+    width: 320px;
+    height: 350px;
+    border: none;
+
+    @media (min-width: @tablet-width) {
+        width: 100%;
+    }
+}
