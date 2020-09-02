@@ -24,7 +24,7 @@
         color: @color-heading;
         background-color: transparent;
     }
-    
+
     @media (min-width: @desktop-width) {
         width: 1200px;
     }
@@ -34,8 +34,8 @@
     @media (min-width: @tablet-width) {
         width: 20%;
     }
-    
-}  
+
+}
 
 .main-nav__toggle {
     position: absolute;
@@ -68,21 +68,21 @@
 .main-nav--closed .main-nav__toggle:hover::before {
     background-color: fade(@color-site, 60%);
     box-shadow:
-       0 9px 0 0 fade(@color-site, 60%),
-       0 18px 0 0 fade(@color-site, 60%);
+        0 9px 0 0 fade(@color-site, 60%),
+        0 18px 0 0 fade(@color-site, 60%);
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
     background-color: fade(@color-site, 30%);
-    box-shadow: 
-       0 9px 0 0 fade(@color-site, 30%),
-       0 18px 0 0 fade(@color-site, 30%);
+    box-shadow:
+        0 9px 0 0 fade(@color-site, 30%),
+        0 18px 0 0 fade(@color-site, 30%);
 }
 
 .main-nav--opened .main-nav__toggle:active::before {
-    background-color: fade (@color-site, 30%);
-    box-shadow: 
-        0 9px 0 0 fade(@color-site. 30%),
+    background-color: fade(@color-site, 30%);
+    box-shadow:
+        0 9px 0 0 fade(@color-site, 30%),
         0 18px 0 0 fade(@color-site, 30%);
 }
 
@@ -211,7 +211,7 @@
         color: @color-site;
         background-color: transparent;
       }
-  
+
       &:active {
         color: fade(@color-heading, 30%);
       }

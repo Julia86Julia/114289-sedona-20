@@ -1,7 +1,108 @@
+body {
+    font-family: @font-family;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+    font-family: @font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .button () {
+    font-family: @font-family;
+    font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
     color: @color-background;
     background-color: @color-site;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.button:hover {
+    background: #669ec0;
+}
+.button:active {
+    background: #5496dd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+    background: #e5e5e5;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+    border: none;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
 }
