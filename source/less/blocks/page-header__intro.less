@@ -24,14 +24,13 @@
     left: 0;
     width: 100%;
     height: 389px;
-    background-color: #e4f1f9;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: bottom 101% center;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-        background-image: url("../img/bg-back-mobile@2x.jpg");
+        background-image: url("../../img/bg-back-mobile@2x.jpg");
     }
 
     @media (min-width: @tablet-width) {
@@ -39,11 +38,11 @@
         left: 0;
         width: 768px;
         height: 518px;
-        background-image: url("../img/bg-back-tablet@1x.jpg");
-
+        background-image: url("../../img/bg-back-tablet@1x.jpg");
+    
         @media (min-resolution: 2dppx) {
-            background-image: url("../img/bg-back-tablet@2x.jpg");
-            background-size: 1536px auto;
+          background-image: url("../../img/bg-back-tablet@2x.jpg");
+          background-size: 1536px auto;
         }
     }
 
@@ -51,11 +50,11 @@
         top: -41px;
         left: 0;
         width: 1200px;
-        background-image: url("../img/bg-back-desktop@1x.jpg");
-  }
-
-    @media (min-resolution: 2dppx) {
-        background-image: url("../img/bg-back-desktop@2x.jpg");
+        background-image: url("../../img/bg-back-desktop@1x.jpg");
+    }
+    
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/bg-back-desktop@2x.jpg");
         background-size: 2400px auto;
     }
 }
@@ -63,7 +62,7 @@
 .page-header__intro--inner {
     top: -28px;
     left: 0;
-    width: 100%;
+    width: 320px;
     height: 158px;
     background-color: #e4f1f9;
     background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -72,7 +71,7 @@
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-        background-image: url("../img/bg-back-mobile@2x.jpg");
+        background-image: url("../../img/bg-back-mobile@2x.jpg");
     }
 
     @media (min-width: @tablet-width) {
@@ -88,6 +87,11 @@
         }
     }
 
+    @media (min-resolution: 2dppx) {
+        background-image: url(../../img/bg-back-tablet@2x.jpg);
+        background-size: 1536px auto;
+    }
+
     @media (min-width: @desktop-width) {
         top: -41px;
         left: 0;
@@ -96,7 +100,7 @@
         background-image: url("../img/bg-back-desktop@1x.jpg");
 
         @media (min-resolution: 2dppx) {
-            background-image: url("../img/bg-back-desktop@2x.jpg");
+            background-image: url(../../img/bg-back-desktop@2x.jpg);
             background-size: 2400px auto;
         }
     }
@@ -105,14 +109,17 @@
 .header-intro__image--index {
     position: absolute;
     bottom: 85px;
-    left: 50%;
-    margin-left: -141px;
+    left: 19px;
 
     @media (min-width: @tablet-width) {
         width: 461px;
         height: 350px;
         bottom: 91px;
-        margin-left: -230px;
+        left: 153px;
+    }
+
+    @media (min-width: @desktop-width) {
+        left: 370px;
     }
 }
 
@@ -121,18 +128,18 @@
     width: 229px;
     height: 39px;
     bottom: 67px;
-    left: 50%;
-    margin-left: -114px;
+    left: 44px;
 
     @media (min-width: @tablet-width) {
         width: 460px;
         height: 79px;
         bottom: 118px;
-        margin-left: -230px;
+        left: 155px;
     }
 
     @media (min-width: @desktop-width) {
         bottom: 120px;
+        left: 370px;
     }
 }
 
@@ -141,24 +148,21 @@
     position: absolute;
     content: "";
     bottom: 0;
-    left: 50%;
-    margin-left: -160px;
+    left: 0;
     width: 320px;
     height: 26px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-image: url(../../img/bg-intro-triangle-mobile.svg);
     background-repeat: no-repeat;
-    background-position: bottom -1px center;
+    background-position: 0 0;
 
     @media (min-width: @tablet-width) {
-        width: 100%;
+        width: 768px;
         height: 57px;
-        margin-left: -384px;
-        background-image: url("../img/bg-intro-triangle-tablet.svg");
+        background-image: url(../../img/bg-intro-triangle-tablet.svg);
     }
 
     @media (min-width: @desktop-width) {
         width: 1200px;
-        margin-left: -600px;
-        background-image: url("../img/bg-intro-triangle-desktop.svg");
+        background-image: url(../../img/bg-intro-triangle-desktop.svg);
     }
 }
