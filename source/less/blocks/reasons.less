@@ -40,6 +40,25 @@
         width: 1200px;
     }
 }
+.reasons__item--accent-top {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: @color-site;
+    color: @color-background;
+
+    @media (min-width: @tablet-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 768px;
+        background-color: @color-background;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 1200px;
+    }
+}
 
 .reasons__triangle {
     width: 0;
@@ -78,6 +97,7 @@
         padding-top: 47px;
         padding-left: 60px;
         padding-right: 60px;
+        margin-top: 21px;
     }
 }
 
@@ -96,6 +116,7 @@
         padding-top: 52px;
         padding-left: 84px;
         padding-right: 85px;
+        margin-top: 0px;
     }
 }
 
