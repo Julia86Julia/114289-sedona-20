@@ -1,0 +1,108 @@
+.modal-success {
+    margin: 0 auto;
+    top: 150px;
+    bottom: auto;
+    width: 320px;
+    min-height: 323px;
+    background-color: #f2f2f2;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    display: none;
+
+    @media (min-width: @tablet-width) {
+        width: 640px;
+        min-height: 347px;    
+    }
+}
+
+.modal-success__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        width: 640px;
+    }
+}
+
+.modal-success__block {
+    width: 320px;
+    min-height: 227px;
+    background-color: @color-background;
+
+    @media (min-width: @tablet-width) {
+        width: 640px;
+        height: 201px;
+    }
+}
+
+.modal-success__title {
+    margin: 0;
+    margin-top: 33px;
+    margin-bottom: 26px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 70px;
+    }
+}
+
+.modal-success__text {
+    margin: 0;
+    padding: 0;
+    padding-left: 39px;
+    padding-right: 39px;
+    
+    @media (min-width: @tablet-width) {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+}
+
+.modal-success__button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    width: 280px;
+    border: none;
+    outline: none;
+    color: pointer;
+    color: @color-background;
+    text-transform: uppercase;
+    background-color: @color-site;
+
+    &:hover,
+    &:focus {
+        background-color: @color-focus;
+    }
+
+    &:active {
+        color: fade(@color-background, 30%);
+        background-color: @color-active;
+    }
+
+    &:disabled {
+        background-color: #e5e5e5;
+    }
+
+    @media (min-width: @tablet-width) {
+        width: 458px;
+        margin-top: 44px;
+        margin-bottom: 44px;
+        font-size: 21px;
+        line-height: 26px;
+    }
+}
